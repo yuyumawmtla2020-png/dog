@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Shelter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Dog Shelter (2).png">
+</head>
+<body>
+    <div class="sticky-wrapper">
+        <header  class="container">        
+            <div class="logo">
+                <img src="Dog Shelter (1).png" alt="">
+            </div>
+
+            <div class="right-section">
+    <div class="search">
+        <input type="text" placeholder="Search our site...." oninput="showSearch(this.value)">
+    </div>
+
+    <div class="donate">
+        <button onclick="sayThanks()">Donate</button>
+        <button onclick="toggleMode()">🌙 Switch Color</button>
+    </div>
+</div>
+        </header>
+    
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">☰</label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#success-stories">Success Stories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="adopt.html">Adopt Now</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>               
+                </ul>
+        </nav>
+    </div>
+   
+
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1>Welcome to Dog Shelter</h1>
+            <p>Adopt your best friend today!</p>
+            <a href="#dog-list">
+                <button class="hero-btn">Find a dog to adopt</button>
+            </a>
+        </div>
+
+        <div class="svg-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ff8800" fill-opacity="1" d="M0,224L14.1,197.3C28.2,171,56,117,85,90.7C112.9,64,141,64,169,96C197.6,128,226,192,254,186.7C282.4,181,311,107,339,112C367.1,117,395,203,424,229.3C451.8,256,480,224,508,186.7C536.5,149,565,107,593,122.7C621.2,139,649,213,678,256C705.9,299,734,309,762,261.3C790.6,213,819,107,847,96C875.3,85,904,171,932,181.3C960,192,988,128,1016,90.7C1044.7,53,1073,43,1101,85.3C1129.4,128,1158,224,1186,245.3C1214.1,267,1242,213,1271,197.3C1298.8,181,1327,203,1355,202.7C1383.5,203,1412,181,1426,170.7L1440,160L1440,0L1425.9,0C1411.8,0,1384,0,1355,0C1327.1,0,1299,0,1271,0C1242.4,0,1214,0,1186,0C1157.6,0,1129,0,1101,0C1072.9,0,1045,0,1016,0C988.2,0,960,0,932,0C903.5,0,875,0,847,0C818.8,0,791,0,762,0C734.1,0,706,0,678,0C649.4,0,621,0,593,0C564.7,0,536,0,508,0C480,0,452,0,424,0C395.3,0,367,0,339,0C310.6,0,282,0,254,0C225.9,0,198,0,169,0C141.2,0,113,0,85,0C56.5,0,28,0,14,0L0,0Z"></path>
+            </svg>
+        </div>
+    </div>
+
+
+    <section id="dog-list" class="dog-container">
+    <h2 class="section-title">Dogs Looking for Homes</h2>
+    
+    <div class="dog-grid">
+        <div class="dog-card">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=500" alt="Dog 1">
+            <div class="dog-info">
+                <h3>Buddy</h3>
+                <p>Golden Retriever | 2 Years Old</p>
+                <button class="adopt-btn">Adopt Buddy</button>
+            </div>
+        </div>
+
+        <div class="dog-card">
+            <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=500" alt="Dog 2">
+            <div class="dog-info">
+                <h3>Charlie</h3>
+                <p>Beagle | 1 Year Old</p>
+                <button class="adopt-btn">Adopt Charlie</button>
+            </div>
+        </div>
+
+        <div class="dog-card">
+            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=500" alt="Dog 3">
+            <div class="dog-info">
+                <h3>Bella</h3>
+                <p>Poodle | 3 Years Old</p>
+                <button class="adopt-btn">Adopt Bella</button>
+            </div>
+        </div>
+
+        <div class="dog-card">
+            <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=500" alt="Dog 4">
+            <div class="dog-info">
+                <h3>Max</h3>
+                <p>Labrador | 4 Years Old</p>
+                <button class="adopt-btn">Adopt Max</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why-adopt">
+    <div class="container">
+        <h2 class="section-title">Why adopt a dog?</h2>
+        <div class="features">
+            <div class="feature-item">
+                <div class="icon">🏠</div>
+                <h3>Save a Life</h3>
+                <p>Giving a dog a second chance at a happy life.</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon">❤️</div>
+                <h3>Unconditional Love</h3>
+                <p>Dogs are loyal companions who love you forever.</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon">🐾</div>
+                <h3>Health Benefits</h3>
+                <p>Walking a dog keeps you active and reduces stress.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="success-stories" class="success-section">
+    <h2 class="section-title">Happy Tails (Success Stories)</h2>
+    
+    <div class="success-container">
+        <div class="story-card">
+            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=500" alt="Success Story 1">
+            <div class="story-text">
+                <p>"Buddy is now the heart of our family. Thank you for helping us find our best friend!"</p>
+                <span>- The Wilson Family</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2 class="logo-text">Dog <span>Shelter</span></h2>
+            <p>Making a difference, one paw at a time. Join us in finding every dog a loving home.</p>
+        </div>
+        
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#dog-list">Adopt</a></li>
+                <li><a href="#success-stories">Stories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>📍 Yangon, Myanmar</p>
+            <p>📞 09-123 456 789</p>
+            <p>📧 hello@dogshelter.com</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        &copy; 2024 Dog Shelter | Designed with ❤️
+    </div>
+</footer>
+
+
+
+
+<script>
+    // Feature 1: Search Interaction (Console မှာ စစ်ကြည့်လို့ရတယ်)
+    function showSearch(val) {
+        console.log("Searching for: " + val);
+        // တီချယ်က မျက်မြင်သက်သေပြခိုင်းရင် Console ကိုပြဖို့ မမေ့နဲ့နော်
+    }
+
+    // Feature 2: Donate Message
+    function sayThanks() {
+        alert("Thank you for your kindness! Every donation helps our dogs.");
+    }
+
+    // Feature 3: Dark/Light Mode
+    function toggleMode() {
+        // body ထဲကို class ထည့်လိုက်/ထုတ်လိုက်လုပ်တာ
+        document.body.classList.toggle("dark-mode");
+
+        // တိုက်ရိုက် အရောင်ပြောင်းခိုင်းတာ (ပိုသေချာအောင်)
+        if (document.body.classList.contains("dark-mode")) {
+            document.body.style.backgroundColor = "#1a1c2c"; 
+            document.body.style.color = "white";
+        } else {
+            document.body.style.backgroundColor = "white"; 
+            document.body.style.color = "black";
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+  
+
+    
+</body>
+</html>

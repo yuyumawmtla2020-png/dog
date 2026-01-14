@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Dog Shelter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Dog Shelter (2).png">
+</head>
+<body>
+    <div class="sticky-wrapper">
+        <header  class="container">        
+            <div class="logo">
+                <img src="Dog Shelter (1).png" alt="">
+            </div>
+
+            <div class="right-section">
+    <div class="search">
+        <input type="text" placeholder="Search our site...." oninput="showSearch(this.value)">
+    </div>
+
+    <div class="donate">
+        <button onclick="sayThanks()">Donate</button>
+        <button onclick="toggleMode()">🌙 Switch Color</button>
+    </div>
+</div>
+        </header>
+    
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">☰</label>
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#success-stories">Success Stories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="adopt.html">Adopt Now</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>              
+                </ul>
+        </nav>
+    </div>
+   
+
+    <section class="about-section">
+        <div class="container">
+            <h1 class="section-title">About Our Shelter</h1>
+            <p class="about-intro">We are a non-profit organization dedicated to rescuing dogs and finding them their forever homes.</p>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Our Vision</h3>
+                    <p>To create a world where every dog is treated with love and respect.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Our History</h3>
+                    <p>Founded in 2024, we have successfully rescued over 100 dogs this year.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Join Us</h3>
+                    <p>You can help by volunteering, donating, or adopting a furry friend.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2 class="logo-text">Dog <span>Shelter</span></h2>
+            <p>Making a difference, one paw at a time. Join us in finding every dog a loving home.</p>
+        </div>
+        
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#dog-list">Adopt</a></li>
+                <li><a href="#success-stories">Stories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>📍 Yangon, Myanmar</p>
+            <p>📞 09-123 456 789</p>
+            <p>📧 hello@dogshelter.com</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        &copy; 2024 Dog Shelter | Designed with ❤️
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode")) {
+                document.body.style.backgroundColor = "#1a1c2c";
+                document.body.style.color = "white";
+            } else {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            }
+        }
+    </script>
+</body>
+</html>
